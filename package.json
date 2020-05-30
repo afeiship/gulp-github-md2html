@@ -1,6 +1,6 @@
 {
-  "name": "ushell-module-react",
-  "version": "0.0.1",
+  "name": "@feizheng/ushell-module-react",
+  "version": "1.0.0",
   "description": "Unix like shell module for react.",
   "main": "index.sh",
   "repository": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/afeiship/ushell-module-react/issues"
   },
-  "homepage": "https://github.com/afeiship/ushell-module-react#readme"
+  "homepage": "https://github.com/afeiship/ushell-module-react#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
