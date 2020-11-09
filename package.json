@@ -1,5 +1,5 @@
 {
-  "name": "@feizheng/ushell-module-react",
+  "name": "@jswork/ushell-module-react",
   "version": "1.0.0",
   "description": "Unix like shell module for react.",
   "main": "index.sh",
