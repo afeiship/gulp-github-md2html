@@ -1,10 +1,11 @@
 {
   "name": "@jswork/gulp-github-md2html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp plugin for github markdown to html.",
   "homepage": "https://js.work",
   "scripts": {
-    "test": "mocha __tests__/base.js"
+    "test": "mocha __tests__/base.js",
+    "release": "release-it"
   },
   "main": "index.js",
   "license": "MIT",
@@ -17,5 +18,12 @@
   },
   "dependencies": {
     "@jswork/github-md2html": "^1.0.4"
-  }
+  },
+  "keywords": [
+    "github",
+    "gulp",
+    "html",
+    "markdown",
+    "md"
+  ]
 }
