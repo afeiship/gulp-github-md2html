@@ -1,26 +1,21 @@
 {
-  "name": "@jswork/ushell-module-react",
+  "name": "@jswork/gulp-github-md2html",
   "version": "1.0.0",
-  "description": "Unix like shell module for react.",
-  "main": "index.sh",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/afeiship/ushell-module-react.git"
+  "description": "Gulp plugin for github markdown to html.",
+  "homepage": "https://js.work",
+  "scripts": {
+    "test": "mocha __tests__/base.js"
   },
-  "keywords": [
-    "ushell",
-    "unix",
-    "shell",
-    "system",
-    "infomation"
-  ],
-  "author": "afei",
+  "main": "index.js",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/afeiship/ushell-module-react/issues"
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "event-stream": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "mocha": "^6.2.2",
+    "through2": "^3.0.1"
   },
-  "homepage": "https://github.com/afeiship/ushell-module-react#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "dependencies": {
+    "@jswork/github-md2html": "^1.0.4"
   }
 }

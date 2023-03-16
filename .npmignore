@@ -1,3 +1,13 @@
-# vscode
-.vscode
-.history
+.idea
+.DS_Store
+**/npm-debug.log
+**/node_modules
+test
+src
+build
+gulpfile.js
+example
+__tests__
+.editorconfig
+.prettierrc
+.release-it.json
