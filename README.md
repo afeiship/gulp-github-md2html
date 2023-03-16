@@ -11,9 +11,9 @@ yarn add --dev @jswork/gulp-github-md2html
 ```js
 "use strict";
 
-var gulp = require('gulp');
-var md2html = require('@jswork/gulp-github-md2html');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const md2html = require('@jswork/gulp-github-md2html');
+const rename = require('gulp-rename');
 
 gulp.task('demo', function () {
   return gulp

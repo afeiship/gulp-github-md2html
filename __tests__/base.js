@@ -1,17 +1,17 @@
 var assert = require('assert');
 var File = require('vinyl');
-var banner = require('..');
+var md2html = require('..');
 
-describe('gulp-banner', function() {
-  describe('Add a banner', function() {
-    it('should prepend banner string', function(done) {
+describe('gulp-md2html', function() {
+  describe('in buffer mode', function() {
+    it('should convert markdown to html', function(done) {
       // create the fake file
       var fakeFile = new File({
-        contents: Buffer.from('abufferwiththiscontent')
+        contents: Buffer.from('Hello **world**')
       });
 
       // Create a prefixer plugin stream
-      var myPlugin = banner('/*My Banner*/\n');
+      var myPlugin = md2html();
 
       // write the fake file to it
       myPlugin.write(fakeFile);
@@ -22,7 +22,7 @@ describe('gulp-banner', function() {
         assert(file.isBuffer());
 
         // check the contents
-        assert.equal(file.contents.toString('utf8'), '/*My Banner*/\nabufferwiththiscontent');
+        assert.equal(file.contents.toString('utf8'), '<p>Hello <strong>world</strong></p>');
         done();
       });
     });
